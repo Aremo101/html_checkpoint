@@ -6,34 +6,37 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header style="display: flex; justify-content: right;margin-right: 100px;">
+        <!--created navigation opyions using the nav tag-->
         <nav>
-            <div>
-                <a href="">home</a>
-                <a href="">about</a>
-                <a href="">work</a>
-                <a href="">resume</a>
-                <a href="">contact</a>
-
-
-            </div>
+                <a id="home">home</a>
+                <a href="#about">about</a>
+                <a href="#work">work</a>
+                <a href="#resume">resume</a>
+                <a href="#contact">contact</a>
         </nav>
 
     </header>
     <main>
         <section>
-            <h1>
+            <!--created an about me session using the h1 tag, anchor tag, div, image src and p tag -->
+            <h1 style="text-align: center;">
                 ABOUT
             </h1>
-            <div style="display: flex;">
+            <a id="about"></a>
+            <div style="display: flex;gap: 100px;justify-content: center;">
                 <img src="./RES/PASSPORT.JPG" style="width: 200px;" alt="my passport">
-                <p style="display: block; width: 400px; ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid necessitatibus fugit expedita deserunt accusantium
-                     voluptatem tempore quasi enim iusto incidunt a eveniet voluptas, alias aut sunt ut ab id iste similique eligendi
-                      debitis reprehenderit totam accusamus. Atque mollitia dicta quidem ullam deleniti sapiente, consectetur adipisci 
-                      facere magnam ratione iure necessitatibus eligendi. Libero possimus nisi iste voluptas mollitia. 
-                      Voluptatum, repellat doloribus.</p>
+                <p style="display: block; width: 400px; ;">Successful Bank Executive talented at leading strong teams, 
+                    increasing business and maximizing profitability. Dedicated Head financial transaction officer familiar with
+                     bank regulations, best practices and effective sales strategies. Able to build productive relationships to drive 
+                     business success. Seasoned Bank Executive highly effective at turning corporate mandates into actionable policies 
+                     that optimize operations and grow revenue. Resourceful, forward-thinking leader talented at keeping bank at 
+                     forefront of market. Believe in cultivating management team from within. Results-focused executive leader adept a
+                     t maximizing revenue and customer acquisitions. More than 5years successful history in the banking industry. 
+                     Talented manager and proactive decision maker.</p>
             </div>
-            <div>
+            <!--furthermore a video tag was used including video control and source src-->
+            <div style="display: flex; justify-content: center;">
                 <video controls loop muted width="500" height="400">
                     <source src="./RES/video (2160p).mp4">
                 </video>
@@ -41,28 +44,43 @@
             
         </section>
         <section>
-            <h1>
+            <!--a work section was created using an h1 tad after the section tag, anchor tag and unorder list to list jon functions-->
+            <h1 style="text-align: center;">
                 WORK
             </h1>
-            <div>
+            <a id="work"></a>
+            <div style="margin-left: 28%;">
                 <ul>
-                    <li>I work in Banking operations departement</li>
-                    <li>I manage a team of five officers</li>
-                    <li>Manage yearly buggeting</li>
-                    <li></li>
+                    <li>Managed team of transactional service officers focused on delivering excellent customer service.</li>
+                    <li>Directed staff of 5 personnel and managed budget annually.</li>
+                    <li>Upheld stringent bank standards for loans, money handling and legal considerations.</li>
+                    <li>Contacted potential clients to pursue sales and gather funds.</li>
+                    <li>Encouraged employee development and promoted management staff from within.</li>
+                    <li>Utilized up-to-date information to make effective decisions governing bank operations.</li>
+                    <li>Supervise branch operations and continuous improvements in each area.</li>
                 </ul>
             </div>
         </section>
         <section>
-            <h1>
+            <!--a resume session was created using the h1 tag which was also styled as done for other for text orientation. further more an anchor tag, a div
+            and another anchor tag for imported link was used-->
+            <h1 style="text-align: center;">
                 RESUME
             </h1>
-            <a href="https://www.linkedin.com/in/kehinde-oni-881885a9/" target="_blank">my linkedin page</a>
+            <a id="resume"></a>
+            <div style="display: flex;justify-content: center;">
+                <a href="https://www.linkedin.com/in/kehinde-oni-881885a9/" target="_blank">my linkedin page</a>
+            </div>
+            
         </section>
         <section>
-            <h1>
+            <!--here an h1 was used to create the header while a form was used for the purpose of collecting data andsame was labled using label tag
+            a break tag was used to give space-->
+            <h1 style="text-align: center;">
                 CONTACT
             </h1>
+            <a id="contact"></a>
+            <div style="display: flex;justify-content: center;">
             <form action="">
                 <label for="name">Name</label>
                 <br>
@@ -80,15 +98,19 @@
                 <br>
                 <textarea name="message" id="" cols="30" rows="5"></textarea>
             </form>
+        </div>
         </section>
 
 
     </main>
+    <!--a footer was created using the footer tag and a div was introduced and styled to make it unique after which a p tag was used for information
+    about the author and finally an anchor tag for the easy navigation back to top by site users-->
     <footer style="background-color: aquamarine;">
         <div style="height: 50px;">
             <p>Author: Oni Kehinde Emmanuel<br>
                 <a href="onikehinde56@yahoo.com">onikehinde56@yahoo.com</a></p>
         </div>
+        <a href="#home">Top</a>
     </footer>
 </body>
 </html>
